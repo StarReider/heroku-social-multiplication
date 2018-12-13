@@ -41,7 +41,7 @@ public class RabbitMQConfiguration {
 	 public ConnectionFactory connectionFactory() {
 	     final URI rabbitMqUrl;
 	     try {
-	         rabbitMqUrl = new URI(getEnvOrThrow("CLOUDAMQP_URL"));
+	         rabbitMqUrl = new URI(getEnvOrThrow("CLOUDAMQP_GRAY_URL"));
 	     } catch (URISyntaxException e) {
 	         throw new RuntimeException(e);
 	     }
